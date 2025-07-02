@@ -1,0 +1,77 @@
+import Aura from '@primeuix/themes/lara';
+import { fileURLToPath } from 'url'
+export default defineNuxtConfig({
+  devtools: { enabled: true },
+
+  future: {
+    compatibilityVersion: 4
+  },
+
+  modules: [
+    '@pinia/nuxt',
+    "@nuxtjs/tailwindcss",
+    "@primevue/nuxt-module",
+    'nuxt3-notifications',
+    'vue3-carousel-nuxt',
+    '@nuxtjs/i18n',
+  ],
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        files: [
+          'en.json',
+        ]
+      },
+      {
+        code: 'ru',
+        name: 'Русский',
+        files: [
+          'ru.json',
+        ]
+      },
+    ],
+
+    lazy: true,
+    debug: true,
+    defaultLocale: 'en',
+    langDir: fileURLToPath(new URL('./locales', import.meta.url)),
+    detectBrowserLanguage: {
+      useCookie: true,
+      //cookieKey: 'i18n_redirected',
+      alwaysRedirect: false,
+      fallbackLocale: 'en'
+    },
+  },
+  css: [
+    '~/assets/styles/tailwind.css',
+    '~/assets/styles/sass/style.sass',
+    'primeicons/primeicons.css',
+    '~/assets/styles/vars.css',
+  ],
+
+  ssr: false,
+
+  primevue: {
+
+    autoImport: true,
+    components: {
+      exclude: ['form', 'carousel','chart']
+    },
+    options: {
+
+      theme: {
+        preset: Aura
+      }
+    },
+    importTheme: { from: '~/themes/theme.js' },
+  },
+
+  runtimeConfig: {
+    public:{
+      apiUrl: 'http://127.0.0.1:8000',
+    }
+  },
+  compatibilityDate: '2025-04-07',
+})
