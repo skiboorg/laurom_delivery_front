@@ -14,6 +14,9 @@ export function createCatalogRepository(appFetch: typeof $fetch){
         cases(){
             return appFetch('/api/catalog/cases');
         },
+        faqs(){
+            return appFetch('/api/catalog/faqs');
+        },
     }
 
 }

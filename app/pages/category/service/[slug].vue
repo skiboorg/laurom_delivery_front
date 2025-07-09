@@ -21,6 +21,10 @@ const service = useDataOrFail(await useAsyncData(()=>$api.catalog.service(slug))
   </BlockTop>
   <PageBlockAbout :text="service.about_us" :items="service.features"/>
   <PageBlockStepSlider :items="service.steps"/>
+  <div v-if="service.image_top" class="container mb-10">
+    <img  class="w-full h-[700px] object-cover mt-12" :src="service.image_top" alt="">
+  </div>
+
   <PageBlockPersonalPriceInfo :items="service.prices"/>
   <BlockSection>
     <div class="container">
@@ -29,7 +33,7 @@ const service = useDataOrFail(await useAsyncData(()=>$api.catalog.service(slug))
   </BlockSection>
 
   <PageBlockDeliveryCases/>
-  <PageBlockFAQ/>
+  <PageBlockFAQ :items="service.faqs"/>
 </template>
 
 <style scoped>

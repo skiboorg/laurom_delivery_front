@@ -3,9 +3,9 @@ const { locale, t, setLocale } = useI18n()
 const main_menu=[
   {label:'Услуги',to:'/'},
   {label:'Клиентам',to:'/'},
-  {label:'О компании',to:'/'},
+  {label:'О компании',to:'/about'},
   {label:'Новости',to:'/'},
-  {label:'Контакты',to:'/'},
+  {label:'Контакты',to:'/contacts'},
 ]
 const languages = [
   {name:'EN',value:'en'},
@@ -38,7 +38,7 @@ const switchLanguage = () => {
         </NuxtLinkLocale>
 
         <nav class="hidden lg:flex  items-center gap-4">
-          <nuxt-link class="text-[12px] text-gray-500" v-for="link in main_menu" :to="link.to">{{link.label}}</nuxt-link>
+          <NuxtLinkLocale class="text-[12px] text-gray-500" v-for="link in main_menu" :to="link.to">{{link.label}}</NuxtLinkLocale>
         </nav>
       </div>
 

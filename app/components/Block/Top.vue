@@ -7,8 +7,9 @@ defineProps(['header', 'image'])
   <div class="container">
     <TypingHeader50 :text="header" class="mb-5"/>
     <slot name="text"></slot>
+    <img v-if="image" class="w-full h-[700px] object-cover mt-12" :src="image" alt="">
   </div>
-  <img v-if="image" class="w-full h-[700px] object-cover mt-12" :src="image" alt="">
+
   <div class="container">
     <slot name="content">
     </slot>
