@@ -3,20 +3,20 @@
 </script>
 
 <template>
-<BlockSection header="Узнайте стоимость и сроки<br>перевозки вашего груза<br>прямо сейчас">
+<BlockSection :header="$t('cost_title')" >
   <div class="container">
     <div class="grid grid-cols-1 gap-5  md:grid-cols-3 mb-[90px]">
       <div class="flex items-start gap-5">
         <p class="text-primary text-[20px] font-bold">01</p>
-        <p class="max-w-[70%]">Укажите параметры груза, маршрут и тип отправления — мы подберем оптимальное решение и рассчитаем стоимость в реальном времени.</p>
+        <p class="max-w-[70%]">{{$t('cost_text_1')}}</p>
       </div>
       <div class="flex items-start gap-5">
         <p class="text-primary text-[20px] font-bold">02</p>
-        <p class="max-w-[70%]">Все виды перевозок: авиа, авто, ж/д, море, сборные и мультимодальные маршруты. Подходит как для бизнеса, так и для юридических отправлений.</p>
+        <p class="max-w-[70%]">{{$t('cost_text_2')}}</p>
       </div>
       <div class="flex items-start gap-5">
         <p class="text-primary text-[20px] font-bold">03</p>
-        <p class="max-w-[70%]">Работа по договору, полный пакет закрывающих документов, безналичный расчет и поддержка персонального менеджера,</p>
+        <p class="max-w-[70%]">{{$t('cost_text_3')}}</p>
       </div>
     </div>
     <BlockPriceForm/>

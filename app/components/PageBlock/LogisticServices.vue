@@ -5,14 +5,14 @@ const {data:categories,pending} = useHttpRequest(useAsyncData(()=>$api.catalog.c
 </script>
 
 <template>
-  <BlockSection header="Логистические услуги">
+  <BlockSection :header="$t('logistik_service_title')">
     <div class="container">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <CardWithButtons
             v-for="(category,index) in categories"
             :title="category.name"
             :index="`0${index+1}`"
-            primary_btn_text="Перейти к услугам"
+            :primary_btn_text="$t('logistik_service_btn')"
             :primary_btn_link="`/category/${category.name_slug}`"
             :tags="category.services?.map(service => ({
                     label: service.name,

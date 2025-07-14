@@ -1,10 +1,14 @@
 <script setup lang="ts">
+import {useI18n} from "vue-i18n";
+
+const { t } = useI18n()
+
 const steps =[
-  {title:'123',text:'How to Delivery',},
-  {title:'1232',text:'How to Delivery11',},
-  {title:'1232',text:'How to Delivery11',},
-  {title:'1232',text:'How to Delivery11',},
-  {title:'1232',text:'How to Delivery11',},
+  {title:t('delivery_form_title1'),text:t('delivery_form_text1'),},
+  {title:t('delivery_form_title2'),text:t('delivery_form_text2'),},
+  {title:t('delivery_form_title3'),text:t('delivery_form_text3'),},
+  {title:t('delivery_form_title4'),text:t('delivery_form_text4'),},
+
 ]
 const currentStep = ref(0)
 
@@ -16,7 +20,7 @@ const currentStep = ref(0)
   <div class="container">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
       <div class="">
-        <TypingHeader40 class="mb-7" text="Как осуществляется<br>поставка груза"/>
+        <TypingHeader40 class="mb-7" :text="$t('delivery_title')"/>
         <p v-for="(step,index) in steps"
            class="border-t py-5 cursor-pointer pl-7 relative"
            @click="currentStep=index"
@@ -29,7 +33,7 @@ const currentStep = ref(0)
           {{step.text}}
         </p>
       </div>
-      <CardWithButtons title="Заявка и консультация"
+      <CardWithButtons :title="$t('delivery_form_title')"
                        :text="steps[currentStep].text">
         <template #icon>
           <svg class="mb-5" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -5,11 +5,11 @@ defineProps(['text','items'])
 <template>
 <BlockSection>
   <div class="container">
-    <div class="grid grid-cols-12 mb-[90px]">
-      <div class="col-span-3">
+    <div class="grid grid-cols-12 mb-[90px] gap-4">
+      <div class="col-span-12 md:col-span-3">
         <TypingGrayText>[ {{$t('about_us')}} ]</TypingGrayText>
       </div>
-      <div class="col-span-9">
+      <div class="col-span-12 md:col-span-9">
         <TypingHeader40 class="" :text="text"/>
 
         </div>

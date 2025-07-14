@@ -13,7 +13,7 @@ const service = useDataOrFail(await useAsyncData(()=>$api.catalog.service(slug))
       ]"/>
   <BlockTop :header="service.name" :image="service.image_top">
     <template #text>
-      <div class="max-w-[50%]">
+      <div class="w-full md:max-w-[50%]">
         <p class="">{{service.description}}</p>
 
       </div>

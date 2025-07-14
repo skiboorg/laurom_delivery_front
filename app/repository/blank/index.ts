@@ -17,6 +17,12 @@ export function createCatalogRepository(appFetch: typeof $fetch){
         faqs(){
             return appFetch('/api/catalog/faqs');
         },
+        news(){
+            return appFetch('/api/news/all');
+        },
+        news_item(slug){
+            return appFetch(`/api/news/all/${slug}`);
+        },
     }
 
 }

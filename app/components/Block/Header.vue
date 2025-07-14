@@ -1,12 +1,15 @@
 <script setup lang="ts">
+import {useI18n} from "vue-i18n";
+
 const { locale, t, setLocale } = useI18n()
-const main_menu=[
-  {label:'Услуги',to:'/'},
-  {label:'Клиентам',to:'/'},
-  {label:'О компании',to:'/about'},
-  {label:'Новости',to:'/'},
-  {label:'Контакты',to:'/contacts'},
+
+const links = [
+  {label:t('menu_about'), url:'/about'},
+  {label:t('menu_services'), url:'/services'},
+  {label:t('menu_news'), url:'/news'},
+  {label:t('menu_contacts'), url:'/contacts'},
 ]
+
 const languages = [
   {name:'EN',value:'en'},
   {name:'RU',value:'ru'}
@@ -24,7 +27,7 @@ const switchLanguage = () => {
 
 <template>
 <header>
-  <div class="container">
+  <div class="container mb-0 md:mb-10">
     <div class="flex items-center py-6">
       <div class="flex items-center gap-12 grow">
         <NuxtLinkLocale to="/">
@@ -38,19 +41,19 @@ const switchLanguage = () => {
         </NuxtLinkLocale>
 
         <nav class="hidden lg:flex  items-center gap-4">
-          <NuxtLinkLocale class="text-[12px] text-gray-500" v-for="link in main_menu" :to="link.to">{{link.label}}</NuxtLinkLocale>
+          <NuxtLinkLocale class="text-[14px] text-gray-500" v-for="link in links" :to="link.url">{{link.label}}</NuxtLinkLocale>
         </nav>
       </div>
 
       <div class="hidden lg:flex items-center gap-4">
-        <a href="tel:8 800 333 55 70" target="_blank" class="flex items-center gap-2 border border-gray-300 rounded-md h-[36px] px-5">
+        <a href="tel:8 800 333 55 70" target="_blank" class="flex items-center gap-2 border border-gray-300 rounded-md h-[40px] px-5">
           <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="3.5" cy="4" r="3.5" fill="#5D91F4"/>
           </svg>
           <span class="font-medium">8 800 333 55 70</span>
           </a>
 
-        <Button label="Рассчитать стоимость"/>
+        <Button :label="$t('price_btn')"/>
         <Select v-model="selectedLang" :options="languages" @update:modelValue="switchLanguage" option-value="value" option-label="name"   />
       </div>
       <div class="block lg:hidden">

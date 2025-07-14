@@ -38,7 +38,7 @@ const config = {
 <template>
   <BlockSection>
     <div class="container">
-      <div class="flex mb-12 items-end justify-between">
+      <div class="flex flex-wrap mb-12 items-end justify-between gap-4">
         <TypingHeader40 text="Этапы оказания<br>услуги авиаперевозок"/>
         <div class="flex  gap-3">
           <Button severity="contrast" @click="carousel.prev()" icon-class="text-sm" icon="pi pi-arrow-left"/>

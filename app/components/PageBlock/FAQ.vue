@@ -6,7 +6,7 @@ defineProps(['items'])
 <BlockSection>
   <div class="container">
     <div class="grid grid-cols-1 md:grid-cols-2">
-     <TypingHeader40 text="FAQ" class="mb-4"/>
+     <TypingHeader40 :text="$t('about_faq_title')" class="mb-4"/>
 
 
         <div class="card">
