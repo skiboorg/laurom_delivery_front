@@ -7,10 +7,10 @@ const props = defineProps(['items'])
     <div class="container">
       <div class="grid grid-cols-12 mb-[70px] gap-4">
         <div class="col-span-12 md:col-span-9 order-2 md:order-1">
-          <TypingHeader40 class="" text="Стоимость рассчитывается<br>индивидуально для каждого конкретного<br>случая, однако можно назвать примерные ориентиры:"/>
+          <TypingHeader40 class="" :text="$t('service_price_title')"/>
         </div>
         <div class="col-span-12 md:col-span-3 order-1 md:order-2">
-          <TypingGrayText class="text-right">[ Примеры авиаперевозок ]</TypingGrayText>
+          <TypingGrayText class="text-right">[ {{$t('service_price_title_tag')}} ]</TypingGrayText>
         </div>
 
       </div>

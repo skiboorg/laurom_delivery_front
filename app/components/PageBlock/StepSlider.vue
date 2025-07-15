@@ -39,10 +39,10 @@ const config = {
   <BlockSection>
     <div class="container">
       <div class="flex flex-wrap mb-12 items-end justify-between gap-4">
-        <TypingHeader40 text="Этапы оказания<br>услуги авиаперевозок"/>
+        <TypingHeader40 :text="$t('service_step_title')"/>
         <div class="flex  gap-3">
           <Button severity="contrast" @click="carousel.prev()" icon-class="text-sm" icon="pi pi-arrow-left"/>
-          <Button severity="contrast" @click="carousel.next()" icon-class="text-sm" icon="pi pi-arrow-right" icon-pos="right" label="Следующие этапы"/>
+          <Button severity="contrast" @click="carousel.next()" icon-class="text-sm" icon="pi pi-arrow-right" icon-pos="right" :label="$t('service_step_next')"/>
         </div>
       </div>
       <Carousel v-if="items && items.length > 0" ref="carousel" v-bind="config" >

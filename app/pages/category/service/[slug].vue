@@ -7,7 +7,7 @@ const service = useDataOrFail(await useAsyncData(()=>$api.catalog.service(slug))
 
 <template>
   <PageBlockBreadcrumbs :items="[
-      { label: 'Логистические услуги', route: '/category'},
+      { label: $t('logistik_service_title'), route: '/category'},
       { label: service.name},
 
       ]"/>
