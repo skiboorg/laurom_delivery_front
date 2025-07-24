@@ -12,8 +12,6 @@ useSeoMeta({
   title: `${t('breadcrumb_news')} `,
   ogTitle: `${t('breadcrumb_news')}`,
 })
-
-
 </script>
 
 <template>
