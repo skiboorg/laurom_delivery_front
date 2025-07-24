@@ -1,10 +1,10 @@
 :root {
     /* Настройки кнопок */
-    --p-button-padding-y: 0.5rem !important!important;
-    --p-button-padding-x: 1rem!important;
-    --p-button-border-radius: 5px!important;
-    --p-button-font-size: 0.875rem!important;
-    --p-button-label-font-weight: 500!important;
+    --p-button-padding-y: 10px !important;
+    --p-button-padding-x: 20px !important;
+    --p-button-border-radius: 5px !important;
+    --p-button-font-size: 0.875rem !important;
+    --p-button-label-font-weight: 500 !important;
 
     /* Настройки полей ввода */
     --p-input-padding-y: 0.5rem!important;

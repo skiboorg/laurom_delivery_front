@@ -4,7 +4,7 @@ const { locale } = useI18n()
 const { t } = useI18n()
 const links = [
   {label:t('menu_about'), url:'/about'},
-  {label:t('menu_services'), url:'/services'},
+  {label:t('menu_services'), url:'/category'},
   {label:t('menu_news'), url:'/news'},
   {label:t('menu_contacts'), url:'/contacts'},
 ]

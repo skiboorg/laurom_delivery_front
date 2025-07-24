@@ -6,9 +6,12 @@ const items = ref([
   { label: t('breadcrumb_home'), route: '/' },
   { label: t('breadcrumb_about')},
 ]);
+
 useSeoMeta({
-  title: `${t('breadcrumb_about')} L’aurom`,
-  ogTitle: `${t('breadcrumb_about')} L’aurom`,
+  title: t('aboutt_title'),
+  ogTitle: t('aboutt_title'),
+  description: t('aboutt_description'),
+  ogDescription: t('aboutt_description'),
 })
 </script>
 

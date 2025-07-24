@@ -17,12 +17,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <section>
-    <div class="container">
-      <img class="rounded-2xl h-[300px] object-cover w-full"  src="~/assets/images/other.png" alt="">
-      <PageBlockBreadcrumbs :items="[
+    <PageBlockBreadcrumbs :items="[
       { label: t('breadcrumb_news')},
       ]"/>
+  <section>
+    <div class="container">
+      <img class="rounded-2xl h-[300px] object-cover w-full mb-10"  src="~/assets/images/other.png" alt="">
+
       <h1 class="font-medium text-2xl md:text-4xl mb-5">{{t('breadcrumb_news')}}</h1>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -39,4 +40,6 @@ useSeoMeta({
       </div>
     </div>
   </section>
+
+
 </template>

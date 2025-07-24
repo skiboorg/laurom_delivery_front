@@ -16,7 +16,7 @@ const {data:cases,pending} = useHttpRequest(useAsyncData(()=>$api.catalog.cases(
             <Button v-for="tag in case_item.tags" size="small" :label="tag.name" severity="secondary"/>
           </div>
         </div>
-        <TypingGrayText class="mb-5">{{case_item.date}}</TypingGrayText>
+        <TypingGrayText class="mb-">{{case_item.date}}</TypingGrayText>
         <div class="grid grid-cols-12 items-end gap-5">
           <div class="col-span-8">
             <TypingHeader26 class="" :text="case_item.name"/>

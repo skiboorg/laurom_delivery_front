@@ -7,8 +7,10 @@ const items = ref([
   { label: t('breadcrumb_contacts')},
 ]);
 useSeoMeta({
-  title: `${t('breadcrumb_contacts')} L’aurom`,
-  ogTitle: `${t('breadcrumb_contacts')} L’aurom`,
+  title: t('contact_title'),
+  ogTitle: t('contact_title'),
+  description: t('contact_description'),
+  ogDescription: t('contact_description'),
 })
 </script>
 
@@ -27,6 +29,7 @@ useSeoMeta({
 
     </div>
   </section>
+
   <section>
     <div class="container">
       <p class="text-sm  opacity-60 mb-4 md:mb-9">{{t('contacts_tag_all')}}</p>

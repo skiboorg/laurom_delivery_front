@@ -26,7 +26,7 @@ const props = defineProps(['items'])
             v-for="(item, index) in items">
           <div>
             <TypingHeader26 class="mb-5" :text="item.name" />
-            <p class="mb-4">{{item.description}}</p>
+            <p class="mb-10">{{item.description}}</p>
 
           </div>
           <div class="flex gap-3">

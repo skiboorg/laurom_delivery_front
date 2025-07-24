@@ -5,7 +5,7 @@ const { locale, t, setLocale } = useI18n()
 
 const links = [
   {label:t('menu_about'), url:'/about'},
-  {label:t('menu_services'), url:'/services'},
+  {label:t('menu_services'), url:'/category'},
   {label:t('menu_news'), url:'/news'},
   {label:t('menu_contacts'), url:'/contacts'},
 ]
@@ -46,7 +46,7 @@ const switchLanguage = () => {
       </div>
 
       <div class="hidden lg:flex items-center gap-4">
-        <a href="tel:8 800 333 55 70" target="_blank" class="flex items-center gap-2 border border-gray-300 rounded-md h-[46px] px-5">
+        <a href="tel:8 800 333 55 70" target="_blank" class="flex items-center gap-2 border border-gray-300 rounded-md h-[40px] px-5">
           <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="3.5" cy="4" r="3.5" fill="#5D91F4"/>
           </svg>

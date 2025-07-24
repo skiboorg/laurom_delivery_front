@@ -1,7 +1,16 @@
 <script setup lang="ts">
+import {useI18n} from "vue-i18n";
+
 const {$api} = useNuxtApp()
 const {slug}= useRoute().params
 const category = useDataOrFail(await useAsyncData(()=>$api.catalog.category(slug)))
+const { t } = useI18n()
+useSeoMeta({
+  title: t('service_title'),
+  ogTitle: t('service_title'),
+  description: t('service_description'),
+  ogDescription: t('service_description'),
+})
 
 </script>
 
