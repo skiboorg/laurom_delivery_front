@@ -22,10 +22,8 @@ const {data:cases,pending} = useHttpRequest(useAsyncData(()=>$api.catalog.cases(
             <TypingHeader26 class="" :text="case_item.name"/>
           </div>
           <div class="col-span-4">
-            <UIDotButton/>
+            <UIDotButton :to="`/cases/${case_item.name_slug}`"/>
           </div>
-
-
         </div>
 
       </div>

@@ -25,20 +25,19 @@ useSeoMeta({
     <template #text>
       <div class="w-full md:max-w-[50%]">
         <p class="">{{service.description}}</p>
-
       </div>
     </template>
   </BlockTop>
   <PageBlockAbout :text="service.about_us" :items="service.features"/>
   <PageBlockStepSlider :items="service.steps"/>
-  <div v-if="service.image_top" class="container mb-10">
-    <img  class="w-full h-[700px] object-cover mt-12" :src="service.image_top" alt="">
+  <div v-if="service.image_middle" class="container mb-10">
+    <img  class="w-full  mt-12" :src="service.image_middle" alt="">
   </div>
 
   <PageBlockPersonalPriceInfo :items="service.prices"/>
-  <BlockSection>
+  <BlockSection >
     <div class="container">
-      <BlockPriceForm/>
+      <BlockPriceForm id="form"/>
     </div>
   </BlockSection>
 

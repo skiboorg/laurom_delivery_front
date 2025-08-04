@@ -14,6 +14,9 @@ export function createCatalogRepository(appFetch: typeof $fetch){
         cases(){
             return appFetch('/api/catalog/cases');
         },
+        case(slug){
+            return appFetch(`/api/catalog/case/${slug}`);
+        },
         faqs(){
             return appFetch('/api/catalog/faqs');
         },
@@ -22,6 +25,12 @@ export function createCatalogRepository(appFetch: typeof $fetch){
         },
         news_item(slug){
             return appFetch(`/api/news/all/${slug}`);
+        },
+        form(body){
+            return appFetch(`/api/catalog/form`,{
+                method:'POST',
+                body
+            });
         },
     }
 

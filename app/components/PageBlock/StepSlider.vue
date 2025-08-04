@@ -50,7 +50,7 @@ const config = {
 
           <div class="border rounded-[10px] p-7 w-[440px] h-full">
             <p class="text-primary mb-7">[{{item.number}}]</p>
-            <TypingHeader26 class="mb-5 pb-5 border-b" :text="item.name"/>
+            <TypingHeader26 class="mb-5 pb-5 border-b min-h-[0px] md:min-h-[75px]" :text="item.name"/>
             <TypingGrayText >{{item.description}}</TypingGrayText>
 
           </div>

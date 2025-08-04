@@ -4,11 +4,12 @@
 
 <template>
 <BlockSection>
-  <div class="container">
-    <TypingHeader50 class="text-center mb-7" :text="$t('offer_text_0')"/>
+  <div class="container mt-10 md:!mt-20">
+    <TypingHeader50 class="text-center mb-7 " :text="$t('offer_text_0')"/>
     <TypingGrayText class="text-center max-w-[590px] m-auto mb-[70px]">{{$t('offer_text_1')}}</TypingGrayText>
+
     <div class="flex items-center justify-center mb-[70px]">
-      <img  src="~assets/offer-map.png">
+      <img class="w-[1360px]"  src="~assets/offer-map.png">
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       <CardSimple :title="$t('offer_text_2_title')" :text="$t('offer_text_2')">
