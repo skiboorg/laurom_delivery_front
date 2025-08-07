@@ -3,13 +3,13 @@ import {useI18n} from "vue-i18n";
 
 const { t } = useI18n()
 
-const steps =[
+const steps =ref ([
   {title:t('delivery_form_title1'),text:t('delivery_form_text1'),},
   {title:t('delivery_form_title2'),text:t('delivery_form_text2'),},
   {title:t('delivery_form_title3'),text:t('delivery_form_text3'),},
   {title:t('delivery_form_title4'),text:t('delivery_form_text4'),},
 
-]
+])
 const currentStep = ref(0)
 
 
