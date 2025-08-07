@@ -26,7 +26,11 @@ useSeoMeta({
       <img class="rounded-2xl h-[300px] object-cover w-full mb-10"  src="~/assets/images/other.png" alt="">
 
       <h1 class="font-medium text-2xl md:text-4xl mb-5">{{t('about_title')}}</h1>
-      <p class="opacity-60 text-md whitespace-pre-line">{{t('about_text')}}</p>
+      <p class="opacity-60 text-md whitespace-pre-line mb-10">{{t('about_text')}}</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ">
+        <img class="rounded-2xl  object-cover w-full" src="~/assets/images/a1.png" alt="">
+        <img class="rounded-2xl  object-cover w-full" src="~/assets/images/a2.png" alt="">
+      </div>
     </div>
   </section>
 
@@ -121,6 +125,7 @@ useSeoMeta({
 <!--      </div>-->
 <!--    </div>-->
 <!--  </section>-->
+
   <PageBlockFAQ :items="faqs" />
 
 </template>
