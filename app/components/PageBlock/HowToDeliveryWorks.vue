@@ -30,10 +30,10 @@ const currentStep = ref(0)
             <circle cx="3.5" cy="3.5" r="3.5" fill="#5D91F4"/>
           </svg>
 
-          {{step.text}}
+          {{step.title}}
         </p>
       </div>
-      <CardWithButtons :title="$t('delivery_form_title')"
+      <CardWithButtons :title="steps[currentStep].title"
                        :text="steps[currentStep].text">
         <template #icon>
           <svg class="mb-5" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
