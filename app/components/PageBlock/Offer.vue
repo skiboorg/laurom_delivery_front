@@ -9,7 +9,7 @@
     <TypingGrayText class="text-center max-w-[590px] m-auto mb-[70px]">{{$t('offer_text_1')}}</TypingGrayText>
 
     <div class="flex items-center justify-center mb-[70px]">
-      <img class="w-[1360px]"  src="~assets/offer-map.png">
+      <img class="w-full"  src="~assets/map.svg">
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       <CardSimple :title="$t('offer_text_2_title')" :text="$t('offer_text_2')">

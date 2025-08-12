@@ -130,7 +130,13 @@
   "footer_mail_2":"domain.ru",
   "footer_pol":"Политика конфиденциальности",
   "footer_off":"Публичная оферта",
-  "footer_order":"Заказать звонок"
+  "footer_order":"Заказать звонок",
+
+  "form_input_bottom_1": "text1",
+  "form_input_bottom_2": "text2",
+  "form_input_bottom_3": "text3",
+  "form_input_bottom_4": "text4",
+  "form_input_bottom_5": "text5"
 
 
 

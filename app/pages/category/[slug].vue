@@ -45,6 +45,7 @@ useSeoMeta({
       </div>
     </template>
   </BlockTop>
+  <PageBlockMap/>
   <BlockTop :header="$t('services_terms_title')">
     <template #text>
       <div class="w-full md:max-w-[50%] mb-12">

@@ -33,12 +33,13 @@ useSeoMeta({
               <Button v-for="tag in case_item.tags" size="small" :label="tag.name" severity="secondary"/>
             </div>
           </div>
-          <TypingGrayText class="mb-">{{case_item.date}}</TypingGrayText>
+          <TypingGrayText class="mb-4">{{case_item.date}}</TypingGrayText>
           <div class="grid grid-cols-12 items-end gap-5">
             <div class="col-span-8">
               <TypingHeader26 class="" :text="case_item.name"/>
             </div>
-            <div class="col-span-4">
+
+            <div class="col-span-4 self-end place-self-end">
               <UIDotButton :to="`/cases/${case_item.name_slug}`"/>
             </div>
           </div>
