@@ -136,9 +136,31 @@
   "form_input_bottom_2": "Укажите страну и город  доставки",
   "form_input_bottom_3": "Габариты и вес, если они известны",
   "form_input_bottom_4": "Почта или телефон",
-  "form_input_bottom_5": "Максимально подробно опишите ваш запрос"
+  "form_input_bottom_5": "Максимально подробно опишите ваш запрос",
+
+  "index_title": "титле",
+  "index_description": "дескр",
+  "aboutt_title": "титле",
+  "aboutt_description": "дескр",
+  "contact_title": "титле",
+  "contact_description": "дескр",
+  "service_title": "титле",
+  "service_description": "дескр",
+  "our_features": "Наши преимущества",
 
 
+  "offer_text_5_title": "1География доставки1",
+  "offer_text_5": "1Работаем с разными странами, даже при санкциях — находим безопасные и законные пути.",
 
+  "contacts_new_title1": "contacts_new_title1",
+  "contacts_new_title2": "contacts_new_title2",
 
+  "contacts_card_ru_new_text_1": "contacts_card_ruru_new_text_1",
+  "contacts_card_ru_new_text_2": "contacts_card_ruru_new_text_2",
+  "contacts_card_ar_new_text_1": "contacts_card_arar_new_text_1",
+  "contacts_card_ar_new_text_2": "contacts_card_arar_new_text_2",
+  "contacts_card_gr_new_text_1": "contacts_card_grgr_new_text_1",
+  "contacts_card_gr_new_text_2": "contacts_card_grgr_new_text_2",
+  "contacts_card_tr_new_text_1": "contacts_card_trtr_new_text_1",
+  "contacts_card_tr_new_text_2": "contacts_card_trtr_new_text_2"
 }
