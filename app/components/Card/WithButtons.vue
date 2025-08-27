@@ -11,7 +11,11 @@ defineProps(['title','text','tags','primary_btn_text','primary_btn_link','index'
     </div>
 
     <div v-if="tags" class="flex gap-2 flex-wrap mb-5">
-      <NuxtLinkLocale class="text-[12px] font-medium border border-black px-5 py-2 rounded-[5px]" v-for="tag in tags" :to="tag.to">{{tag.label}}</NuxtLinkLocale>
+      <NuxtLinkLocale class="text-[12px] font-medium border flex items-center gap-2 border-black px-5 py-2 rounded-[5px]" v-for="tag in tags" :to="tag.to">
+
+        <img :src="tag.icon" alt="">
+        {{tag.label}}
+      </NuxtLinkLocale>
     </div>
     <TypingGrayText class="mb-12">{{text}}</TypingGrayText>
     <div v-if="primary_btn_text" class="flex gap-3">

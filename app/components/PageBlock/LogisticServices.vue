@@ -16,7 +16,8 @@ const {data:categories,pending} = useHttpRequest(useAsyncData(()=>$api.catalog.c
             :primary_btn_link="`/category/${category.name_slug}`"
             :tags="category.services?.map(service => ({
                     label: service.name,
-                    to: `/category/service/${service.name_slug}`
+                    to: `/category/service/${service.name_slug}`,
+                    icon:service.icon_index,
                     }))"
             :text="category.description"
         >

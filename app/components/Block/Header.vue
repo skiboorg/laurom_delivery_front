@@ -91,7 +91,7 @@ const switchLanguage = () => {
           <Button :label="$t('price_btn')"/>
         </a>
 
-        <Select v-model="selectedLang" :options="languages" @update:modelValue="switchLanguage" option-value="value" option-label="name"   />
+        <Select class="rounded-md " v-model="selectedLang" :options="languages" @update:modelValue="switchLanguage" option-value="value" option-label="name"   />
       </div>
       <div class="block lg:hidden">
         <Button icon="pi pi-bars" @click="mobileMenuActive=true"/>

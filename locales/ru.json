@@ -167,5 +167,7 @@
   "contacts_card_tr_new_text_1": "turkey{'@'}unitedexpotrade.ru",
   "contacts_card_tr_new_text_2": "Понедельник - Пятница с 7 до 17 (GMT+3)",
   "contacts_card_kr_new_text_1": "kirgiziya{'@'}unitedexpotrade.ru",
-  "contacts_card_kr_new_text_2": "Понедельник - Пятница с 9 до 19 (GMT+3)"
+  "contacts_card_kr_new_text_2": "Понедельник - Пятница с 9 до 19 (GMT+3)",
+
+  "call_btn": "Индивидуальная консультация"
 }

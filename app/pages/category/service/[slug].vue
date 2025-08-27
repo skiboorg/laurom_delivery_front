@@ -23,14 +23,22 @@ useSeoMeta({
       ]"/>
   <BlockTop :header="service.name" :image="service.image_top">
     <template #text>
-      <div class="w-full md:max-w-[50%]">
+      <div class="w-full md:max-w-[50%] mb-5 md:mb-10">
         <p class="">{{service.description}}</p>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="#form">
+          <Button :label="$t('price_btn')"/>
+        </a>
+        <a href="tel:8 800 333 55 70" target="_blank" class="flex items-center gap-2 border border-gray-300 rounded-md h-[40px] px-5">
+          <span class="font-medium">{{$t('call_btn')}}</span>
+        </a>
       </div>
     </template>
   </BlockTop>
   <PageBlockAbout :text="service.about_us" :items="service.features"/>
   <PageBlockStepSlider :items="service.steps"/>
-  <div v-if="service.image_middle" class="container mb-10 md:mb-[170px]">
+  <div v-if="service.image_middle" class="container mb-10 md:mb-[120px]">
     <img  class="w-full  mt-12" :src="service.image_middle" alt="">
   </div>
 
